@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads - Fórmulas Para o Futuro</title>
+    <link rel="stylesheet" href="styles/downloads.css">
+    <link rel="icon" href="../img/Logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/download.css">
+</head>
+<body>
+    <div id="conteudo_downloads">
+        <!-- Lado Verde -->
+        <div id="verde_downloads">
+            <div id="titulo_downloads">
+                <img src="../img/Logo.png" alt="Logo do Projeto">
+                <img src="../img/LogoTitulo.png" alt="Nome do Projeto">
+            </div>
+            <div id="topoVerde_downloads">
+                <h2 id="tituloVerde_downloads">Biblioteca Digital</h2>
+                <p id="descricaoVerde_downloads">
+                    Nesta seção, você encontrará uma coleção completa de materiais de apoio em <strong>formato digital</strong>. 
+                    São eBooks, apostilas e arquivos exclusivos desenvolvidos para auxiliar estudantes e professores na 
+                    compreensão dos conteúdos matemáticos aplicados a temas de sustentabilidade e inovação. 
+                    Nosso objetivo é oferecer um <strong>acesso simples, gratuito e prático</strong> a recursos que 
+                    ampliam o aprendizado dentro e fora da sala de aula.
+                </p>
+                <p id="slogan_downloads">
+                    Conhecimento acessível para transformar o presente e projetar um futuro sustentável.
+                </p>
+            </div>
+        </div>
+
+        <!-- Lado Branco -->
+        <div id="branco_downloads">
+            <div>
+                <h1 id="tituloBranco_downloads">Downloads Disponíveis</h1>
+                <p id="descricaoBranco_downloads">Clique nos links abaixo e baixe gratuitamente nossos materiais digitais:</p>
+            </div>
+
+            <div id="linksBranco_downloads">
+                <h2 class="subtitulo">Arquivos e Apostilas</h2>
+                <a class="subtitulo" onclick="abrirPDF('../docs/EBOOK - FPF..pdf')"><i class="fa-solid fa-file-pdf"></i> eBook - Fórmulas Para o Futuro </a>
+
+                <a class="subtitulo" onclick="abrirPDF('../docs/APOSTILA.pdf')"><i class="fa-solid fa-file-pdf"></i> Apostila - Funções e Aplicações</a>
+
+                <a class="subtitulo" onclick="abrirPDF('../docs/Simulado.pdf')"><i class="fa-solid fa-file-pdf"></i> Simulado - Educação Ambiental Sustentabilidade</a>
+
+                <a class="subtitulo" onclick="abrirPDF('../docs/Manual do professor.pdf')"><i class="fa-solid fa-file-pdf"></i> Manual do Professor - Equações Sustentáveis</a>
+
+                <a href="../docs/apostilaCompleta.zip" download="apostilaCompleta.zip"  class="subtitulo"><i class="fa-solid fa-download"></i> Download Completo (Pacote ZIP)</a>
+                
+                <a href="./apostilas.html" class="subtitulo"><i class="fa-solid fa-play"></i> Resolução Completa da Apostila</a>
+            </div>
+            
+            <div id="paginasBranco_downloads">
+                <h2 style="color: #075482;">Navegação</h2>
+                <div id="links_apostila">
+                    <a href="../index.html">Voltar ao Início</a>
+                    <a href="./apresentacao.html">Mais sobre o projeto</a>
+                    <a href="apostilas.html">Créditos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pdf_container">
+        <div id="fechar"><button id="botaoFechar"><i class="fa-solid fa-xmark"></i></button></div>
+        <iframe id="viewPDF" style="width:100%;height:100%; border:none; "></iframe>
+    </div>
+    <script src="../scripts/allScript.js"></script>
+</body>
+</html>

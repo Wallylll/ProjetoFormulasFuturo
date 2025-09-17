@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #00993d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+/* Estrutura principal */
+#conteudo_apresentacao {
+    display: flex;
+    width: 95vw;
+    min-height: 80vh;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1rem black;
+}
+
+/* Lado Azul */
+#lado_azul_apresentacao {
+    background-color: #075482;
+    width: 40%;
+    padding: 2rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    color: white;
+}
+
+#titulo_apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#titulo_apresentacao img {
+    width: 8rem;
+}
+
+#titulo_apresentacao h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+#titulo_apresentacao i {
+    color: #00993d;
+    margin-right: 0.5rem;
+}
+
+#slogan_apresentacao {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00993d;
+}
+
+/* Lado Branco */
+#lado_branco_apresentacao {
+    background-color: white;
+    width: 60%;
+    padding: 2rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.bloco_apresentacao {
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-left: 5px solid #075482;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.bloco_apresentacao h2 {
+    color: #075482;
+    margin-bottom: 0.8rem;
+}
+
+.bloco_apresentacao i {
+    margin-right: 0.5rem;
+    color: #00993d;
+}
+
+.bloco_apresentacao p {
+    color: #333;
+    line-height: 1.5rem;
+}
+
+/* Equipe */
+#equipe_apresentacao {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.membro_apresentacao {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+.membro_apresentacao i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #075482;
+}
+
+.membro_apresentacao h3 {
+    color: #00993d;
+    margin-bottom: 0.3rem;
+}
+
+#paginasBranco_apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#paginasBranco_apresentacao a {
+    color: white;
+    background-color: #075482;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    transition: 0.2s;
+}
+#paginasBranco_apresentacao a:hover {
+    background-color: #00993d;
+}
+
+
+/* Responsividade */
+@media (max-width: 1000px) {
+    #conteudo_apresentacao {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #lado_azul_apresentacao, 
+    #lado_branco_apresentacao {
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    #titulo_apresentacao h1 {
+        font-size: 1.6rem;
+    }
+}
