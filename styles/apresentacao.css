@@ -48,7 +48,7 @@ body {
 }
 
 #titulo_apresentacao img {
-    width: 8rem;
+    width: 100%;
 }
 
 #titulo_apresentacao h1 {
@@ -133,6 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
 }
 #paginasBranco_apresentacao a {
     color: white;
@@ -146,22 +147,37 @@ body {
 #paginasBranco_apresentacao a:hover {
     background-color: #00993d;
 }
-
-
 /* Responsividade */
 @media (max-width: 1000px) {
+    html{
+        font-size: 12px;
+    }
+    body{
+        height: 100%;
+    }
     #conteudo_apresentacao {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
+        height: max-content;
+        margin: 1rem 0; 
+        border-radius: 1rem;
     }
 
-    #lado_azul_apresentacao, 
-    #lado_branco_apresentacao {
+    #lado_azul_apresentacao{
         width: 100%;
         border-radius: 0.5rem 0.5rem 0 0;
     }
-
+    #lado_branco_apresentacao {
+        width: 100%;
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
     #titulo_apresentacao h1 {
         font-size: 1.6rem;
     }
+    #links_apresentacao{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
 }
